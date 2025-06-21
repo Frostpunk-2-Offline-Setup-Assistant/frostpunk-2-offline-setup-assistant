@@ -1,0 +1,340 @@
+# Frostpunk 2 Offline Setup Assistant - .gitignore
+
+# ========================
+# Security & Credentials
+# ========================
+.internal/GITHUB_CREDENTIALS.md
+.internal/
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+.env.local
+.env.production
+config/secrets/*
+secrets.json
+credentials.json
+
+# ========================
+# Build & Distribution
+# ========================
+dist/
+build/
+out/
+target/
+release/
+*.exe
+*.msi
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.app/
+*.AppImage
+*.snap
+
+# ========================
+# Dependencies
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+
+# ========================
+# IDE & Editors
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.vimrc
+*.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ========================
+# Operating System Files
+# ========================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ========================
+# Temporary & Cache Files
+# ========================
+*.tmp
+*.temp
+*.cache
+*.log
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+.cache/
+cache/
+logs/
+tmp/
+temp/
+
+# ========================
+# Game & Application Specific
+# ========================
+
+# Game Installation Files
+game_files/
+frostpunk2_installation/
+game_data/
+*.game
+*.save
+*.dat
+
+# Setup Assistant Temporary Files
+setup_temp/
+install_cache/
+download_cache/
+extracted_files/
+installer_temp/
+
+# User Configuration (keep local only)
+user_config/
+local_settings/
+*.user
+*.local
+
+# Save Games (exclude from repo)
+saves/
+save_games/
+backup_saves/
+*.sav
+*.save
+
+# Mod Files
+mods/
+mod_cache/
+*.mod
+workshop_content/
+
+# ========================
+# Archive & Compressed Files
+# ========================
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.bz2
+*.xz
+*.tgz
+
+# ========================
+# Media Files (usually too large)
+# ========================
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.aac
+
+# Screenshots (keep only sample ones in docs)
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+!docs/images/*.png
+!docs/images/*.jpg
+!assets/icons/*.png
+!assets/logos/*.png
+
+# ========================
+# Development & Testing
+# ========================
+
+# Test Results
+test_results/
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+junit.xml
+coverage.xml
+
+# Debugging
+*.pdb
+*.map
+*.debug
+
+# Performance Profiling
+*.prof
+*.trace
+*.perf
+
+# ========================
+# Documentation Generation
+# ========================
+docs/_build/
+docs/build/
+site/
+.sphinx/
+.mkdocs/
+
+# ========================
+# Deployment & CI/CD
+# ========================
+.github/workflows/deploy.yml
+.travis.yml
+.circleci/
+.gitlab-ci.yml
+docker-compose.override.yml
+Dockerfile.dev
+kubernetes/
+helm/
+
+# ========================
+# Database & Storage
+# ========================
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+data/
+database/
+
+# ========================
+# Monitoring & Analytics
+# ========================
+*.pid
+newrelic.ini
+.newrelic.yml
+
+# ========================
+# Custom Project Excludes
+# ========================
+
+# Setup Assistant Build Artifacts
+installer_builder_temp/
+setup_wizard_cache/
+configuration_backup/
+
+# Documentation that shouldn't be public
+internal_docs/
+developer_notes/
+
+# Large binary assets (keep in LFS or external storage)
+assets/videos/
+assets/audio/
+large_assets/
+
+# Platform-specific build outputs
+windows_build/
+macos_build/
+linux_build/
+android_build/
+ios_build/
+
+# Version control for binaries
+*.exe.config
+*.dll.config
+*.so.config
+
+# ========================
+# End of .gitignore
+# ========================
+
+# Note: This .gitignore is designed for the Frostpunk 2 Offline Setup Assistant
+# Modify as needed based on your specific development setup and requirements 

@@ -1,0 +1,266 @@
+# Site settings
+title: "Frostpunk 2 Offline Setup Assistant"
+description: "Complete offline setup solution for Frostpunk 2 survival city-builder game with zero DRM, no Steam login required. Full configuration assistant with mod support and save management."
+url: "https://frostpunk-2-offline-setup-assistant.github.io"
+baseurl: "/frostpunk-2-offline-setup-assistant"
+
+# SEO settings
+author: "Frostpunk 2 Community"
+twitter_username: frostpunk2setup
+github_username: Frostpunk-2-Offline-Setup-Assistant
+linkedin_username: frostpunk2setup
+
+# Site logo and favicon
+logo: "/assets/images/logo.png"
+favicon: "/assets/images/favicon.ico"
+
+# Language and locale
+lang: en_US
+locale: en_US
+
+# Social media and sharing
+social:
+  name: "Frostpunk 2 Offline Setup Assistant"
+  links:
+    - "https://twitter.com/frostpunk2setup"
+    - "https://github.com/Frostpunk-2-Offline-Setup-Assistant"
+    - "https://discord.gg/frostpunk2"
+    - "https://youtube.com/c/frostpunk2guide"
+
+# GitHub repository
+repository: "Frostpunk-2-Offline-Setup-Assistant/frostpunk-2-offline-setup-assistant"
+
+# Theme settings
+theme: minima
+#remote_theme: mmistakes/minimal-mistakes
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  hard_wrap: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-redirect-from
+  - jekyll-archives
+  - jekyll-mentions
+
+# SEO plugin settings
+google_analytics: G-XXXXXXXXXX # Replace with actual GA tracking ID
+google_site_verification: # Replace with actual verification code
+bing_site_verification: # Replace with actual verification code
+
+# Social sharing
+twitter:
+  username: frostpunk2setup
+  card: summary_large_image
+
+facebook:
+  app_id: # Facebook App ID
+  publisher: # Facebook page URL
+
+# Open Graph defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      image: "/assets/images/og-image.png"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      image: "/assets/images/og-image.png"
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+
+# Archive settings
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - .internal/
+  - README.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - gulpfile.js
+  - "*.tmp"
+  - "*.bak"
+
+# Include files
+include:
+  - _pages
+  - _redirects
+  - .htaccess
+  - .well-known
+
+# Timezone
+timezone: UTC
+
+# Encoding
+encoding: "utf-8"
+
+# Conversion
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Outputting
+permalink: /:categories/:year/:month/:day/:title/
+paginate_path: /page:num/
+timezone: null
+
+# Header and navigation
+header_pages:
+  - installation.md
+  - configuration.md
+  - troubleshooting.md
+  - faq.md
+
+# Footer links
+footer_links:
+  - title: "GitHub"
+    url: "https://github.com/Frostpunk-2-Offline-Setup-Assistant/frostpunk-2-offline-setup-assistant"
+  - title: "Discord"
+    url: "https://discord.gg/frostpunk2"
+  - title: "Twitter"
+    url: "https://twitter.com/frostpunk2setup"
+  - title: "YouTube"
+    url: "https://youtube.com/c/frostpunk2guide"
+
+# Custom variables
+app_name: "Frostpunk 2 Offline Setup Assistant"
+app_version: "v2.1.0"
+game_name: "Frostpunk 2"
+developer: "11 bit studios"
+release_date: "2024-12-15"
+
+# Keywords for SEO
+keywords: 
+  - "frostpunk 2"
+  - "offline installer"
+  - "setup assistant"
+  - "survival game"
+  - "city builder"
+  - "offline gaming"
+  - "drm free"
+  - "steam alternative"
+  - "game configuration"
+  - "mod support"
+  - "save management"
+  - "gaming tools"
+  - "pc gaming"
+  - "indie games"
+  - "survival simulation"
+
+# Categories for organization
+categories:
+  - Gaming
+  - Tools
+  - Offline
+  - Setup
+  - Assistant
+  - Mods
+  - Configuration
+
+# Tags for content
+tags:
+  - frostpunk-2
+  - offline-gaming
+  - setup-assistant
+  - survival-games
+  - city-builder
+  - gaming-tools
+  - mod-support
+  - save-management
+  - drm-free
+  - pc-gaming
+
+# Contact information
+contact:
+  email: "support@frostpunk2setup.com"
+  discord: "https://discord.gg/frostpunk2"
+  github: "https://github.com/Frostpunk-2-Offline-Setup-Assistant"
+
+# Download links
+download:
+  windows: "https://frostpunk-2-offline-setup-assistant.github.io/.github"
+  macos: "https://frostpunk-2-offline-setup-assistant.github.io/.github"
+  linux: "https://frostpunk-2-offline-setup-assistant.github.io/.github"
+  source: "https://github.com/Frostpunk-2-Offline-Setup-Assistant/frostpunk-2-offline-setup-assistant"
+
+# External links
+external_links:
+  steam: "https://store.steampowered.com/app/1601580/Frostpunk_2/"
+  epic: "https://store.epicgames.com/en-US/p/frostpunk-2"
+  developer: "https://www.11bitstudios.com/"
+  publisher: "https://www.11bitstudios.com/"
+
+# Feature flags
+features:
+  comments: false
+  analytics: true
+  search: true
+  dark_mode: true
+  social_sharing: true
+  related_posts: true
+
+# Performance optimization
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: [html, head, body]
+  blanklines: false
+  profile: false
+
+# Security headers
+security_headers:
+  content_security_policy: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com;"
+  x_frame_options: "DENY"
+  x_content_type_options: "nosniff"
+  referrer_policy: "strict-origin-when-cross-origin" 
